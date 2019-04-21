@@ -9,33 +9,63 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assests/animate.css" />
+    <link rel="icon" type="image/x-icon" href="./assests/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="assets/logo.jpg"></a>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <!--   <img src="./assests/logo.jpg" alt="Logo Not Found" />-->
+            <span style="font-family: 'Great Vibes', cursive;"  class="animated infinite jackInTheBox delay-2s">Yamaha Hawks</span>
+        </a>
 
-        <ul class="navbar-nav">
+        <marquee behaviour="scroll" direction="left" style="width:300px;color: red" class="mx-auto">Latest Offers
+            Notification</marquee>
+
+        </marquee>
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#" onclick="show('home')">Home</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="#" onclick="show('products')">Products</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#" onclick="show('services')">Services</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about" onclick="show('about')">About</a>
+            </li>
+            <li class="nav-item active ml-5 mr-2">
+                <a class="nav-link btn btn-primary " href="#login" onclick="show('login')">LogIn/SignUp</a>
+
             </li>
 
         </ul>
+
+
     </nav>
+    <div id="home" style="display:block;">
+        Home Works
+    </div>
+    <div id="products" style="display:none;">
+            Products Works
+    </div>
+    <div id="services" style="display:none;">
+            Services Works
+    </div>
+    <div id="about" style="display:none;">
+            About Works
+    </div>
+    <div id="login" style="display:none;">
+            Login Works
+    </div>
 
-
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
